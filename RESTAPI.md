@@ -9,18 +9,43 @@
 + APIBase
     
     網站提供的 API 必須是 APIBase url + 各個 API 的網址組合。 
-    根據不同的專案可能會有不同的 APIBase 格式為 https://easy.express/{slug}/api。
+    根據不同的專案可能會有不同的 APIBase 格式為 https://easy.express/{slug}/api
     
 +  APIPath
 
     例如 APIPath 為  /contactus
-    網址 API 就應該是 APIBase + APIPath => http://easy.express/{slug}/api/contactus
+    網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/contactus
 
 
 ## Request 方式
 
-參數必須以 JSON 格式放在 request content 中
+參數分為 Url，Query 以及 Request
 
+###  Url 參數
+
+```
+/product/{id}/list
+```
+
+id 就是 Url 參數
+完整的請求 Url 為 https://easy.express/demo/api/product/1234/list
+
+### Query 參數
+
+```
+/example/?foo=foo1&bar=bar1
+```
+
+參數
+
+```
+foo: foo1
+bar: bar1
+```
+
+### Request 參數
+
+參數必須以 JSON 格式放在 request content 中
 request header 必須包含
 
 ```
@@ -56,5 +81,4 @@ request content
 4xx:    失敗
 ```
 
-Content:    json 格式
-
+Content:    JSON 格式
