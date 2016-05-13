@@ -31,7 +31,7 @@ Content:
 | Name | string | 產品名稱 |
 | Code | string | 產品編號 |
 | Brief | string | 產品簡介 |
-| Cotent | string | 產品內容 (html 格式) |
+| Content | string | 產品內容 (html 格式) |
 | Photos | [Photo](Photo.md) [] | 照片 |
 | CreatedAt | DateTime (W3C) | 建立時間 |
 | UpdatedAt | DateTime (W3C) | 更新時間 |
