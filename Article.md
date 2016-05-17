@@ -1,5 +1,9 @@
 # 文章 API
 
++ APIPath
+
+  例如 APIPath 為 /article 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/article/{Type}
+
 ## 取得文章內容
 
 |請求方式||
