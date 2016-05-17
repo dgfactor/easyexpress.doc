@@ -1,5 +1,9 @@
 # 分類 API
 
++ APIPath
+
+  例如 APIPath 為 /productcategory 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/productcategory/{id}
+
 ## 取得分類
 
 |請求方式||
