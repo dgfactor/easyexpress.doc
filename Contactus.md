@@ -1,5 +1,9 @@
 # 聯絡我們 API
 
++ APIPath
+
+  例如 APIPath 為 /contactus 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/contactus
+
 ## 取得聯絡我們內容
 
 |請求方式||
