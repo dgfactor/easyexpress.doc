@@ -1,5 +1,9 @@
 # 產品 API
 
++ APIPath
+
+  例如 APIPath 為 /product 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/product/{id}
+
 ## 取得產品內容
 
 |請求方式||
