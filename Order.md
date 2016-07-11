@@ -2,15 +2,15 @@
 
 + APIPath
 
-  例如 APIPath 為 /contactus 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/payment
+  例如 APIPath 為 /order 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/order
 
 
-## 取得付款模組內容
+## 試算訂單金額
 
 |請求方式||
 |--------|-----|
 | Method | POST |
-| Url    | /payment/ |
+| Url    | /query |
 
 ### 傳入參數
 
@@ -20,22 +20,31 @@ Url:
 
 Query:
 
-| 欄位  | 型態 | 欄位說明  |
-| ---- | ---- | -------- |
-| return_url | string | 付款完成後導回網址 |
-| token | string | JWT token |
-| payment_type | integer | 付款方式 |
+**無**
 
 Content:
 
-**無**
+
 
 ### 回傳結果
 
-RedirectResponse
+|欄位|型態|欄位說明|
+|----|----|--------|
+| Amount | bigint | 總金額 |
+| AmountForPay | bigint | 應付金額 |
+| OrderItems | ------ | 關聯欄位 |
+| CreatedAt | DateTime (W3C) | 建立時間 |
+| UpdatedAt | DateTime (W3C) | 更新時間 |
+| Payment | String | 付款方式 |
+
+|關聯欄位|型態|欄位說明|
+|----|----|--------|
+| ProductName | String | 產品名稱 |
+| UnitPrice | bigint | 產品價格 |
+| Quantity | bigint | 產品數量 |
 
 ### 錯誤
 
 | 狀態碼  | 錯誤說明 |
 |---------|----------|
-| 400 | 錯誤的請求 |
+| 403 | 沒有權限 |

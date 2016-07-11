@@ -2,14 +2,14 @@
 
 + APIPath
 
-  例如 APIPath 為 /product 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/simpleproduct/
+  例如 APIPath 為 /simpleproduct 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/simpleproduct/
 
 ## 取得產品內容
 
 |請求方式||
 |--------|-----|
 | Method | GET |
-| Url    | simpleproduct |
+| Url    | /simpleproduct |
 
 ### 傳入參數
 

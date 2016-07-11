@@ -2,7 +2,7 @@
 
 + APIPath
 
-  例如 APIPath 為 /article 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/contacter/{id}
+  例如 APIPath 為 /contacter 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/contacter/{id}
 
 ## 取得聯絡人列表
 
