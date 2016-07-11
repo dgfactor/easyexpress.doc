@@ -2,7 +2,7 @@
 
 + APIPath
 
-  例如 APIPath 為 /contactus 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/order
+  例如 APIPath 為 /order 網址 API 就應該是 APIBase + APIPath => https://easy.express/{slug}/api/order
 
 
 ## 試算訂單金額
