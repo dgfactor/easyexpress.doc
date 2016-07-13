@@ -9,7 +9,7 @@
 |請求方式||
 |--------|-----|
 | Method | GET |
-| Url    | /article/{id} |
+| Url    | /banner/{id} |
 
 ### 傳入參數
 
